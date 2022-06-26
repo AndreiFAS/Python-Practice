@@ -7,9 +7,11 @@ from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, Filters, MessageHandler
 import bot_command as bc
 
-bot = Bot(token='5428134438:AAGwfzbu2-vW_EKEmUOirs-2KTh5F7_hJWc')
-updater = Updater(
-    token='5428134438:AAGwfzbu2-vW_EKEmUOirs-2KTh5F7_hJWc', use_context=True)
+with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork009\_token.txt', 'r', encoding='utf-8') as file:
+    token = file.readline()
+
+bot = Bot(token)
+updater = Updater(token, use_context=True)
 
 
 updater.dispatcher.add_handler(CommandHandler('hello', bc.hi))
