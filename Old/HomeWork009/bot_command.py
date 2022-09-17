@@ -81,12 +81,12 @@ def add(update, context):
     print(msg)
     lst = msg.split()
     context.bot.send_message(update.effective_chat.id, f'Добавил {lst[1]} {lst[2]} {lst[3]} в справочник!')
-    with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork009\BD.csv', 'a+', encoding='utf-8') as file:
+    with open('/Old/HomeWork009/BD.csv', 'a+', encoding='utf-8') as file:
         file.write(f'{lst[1]};{lst[2]};{lst[3]}\n')
 
 
 def read(update, context):
-    with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork009\BD.csv', 'r', encoding='utf-8') as file:
+    with open('/Old/HomeWork009/BD.csv', 'r', encoding='utf-8') as file:
         lst = (''.join(file)).split('\n')
         for i in lst:
             context.bot.send_message(update.effective_chat.id, f'{" ".join(list(i.split(";")))}')
@@ -95,7 +95,7 @@ def read(update, context):
 def find(update, context):
     msg = update.message.text
     lst = msg.split()
-    with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork009\BD.csv', 'r', encoding='utf-8') as file:
+    with open('/Old/HomeWork009/BD.csv', 'r', encoding='utf-8') as file:
         lst_b = (''.join(file)).split('\n')
         for i in lst_b:
             if i.find(lst[1]) >= 0:

@@ -31,15 +31,15 @@ def RLErecover(text):
 
 txt = 'vvbbssssstttttttt'  
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork005\Text.txt', 'w+') as data:
+with open('/Old/HomeWork005/Text.txt', 'w+') as data:
     data.write(txt)
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork005\TextC.txt', 'w+') as data:
+with open('/Old/HomeWork005/TextC.txt', 'w+') as data:
     data.write(RLEcompres(txt))
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork005\TextC.txt', 'r', encoding='utf-8') as data:
+with open('/Old/HomeWork005/TextC.txt', 'r', encoding='utf-8') as data:
     comp_txt = data.read()
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork005\TextR.txt', 'w+') as data:
+with open('/Old/HomeWork005/TextR.txt', 'w+') as data:
     data.write(RLErecover(comp_txt))
 

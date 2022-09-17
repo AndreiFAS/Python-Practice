@@ -28,13 +28,13 @@ def poly_sum(lst1, lst2):
     return res_lst
 
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork004\Task4(1).txt', 'r') as data:
+with open('/Old/HomeWork004/Task4(1).txt', 'r') as data:
     poly_str1 = data.read()
 
 print(f'Первый многочлен\t{poly_str1}')
 poly_list1 = poly_str1.split(" + ")
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork004\Task4(2).txt', 'r') as data:
+with open('/Old/HomeWork004/Task4(2).txt', 'r') as data:
     poly_str2 = data.read()
 
 print(f'Второй многочлен\t{poly_str2}')

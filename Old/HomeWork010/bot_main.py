@@ -7,7 +7,7 @@ from telegram import Update, Bot
 from telegram.ext import Updater, CommandHandler, Filters, MessageHandler
 import bot_com as bc
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork009\_token.txt', 'r', encoding='utf-8') as file:
+with open('/Old/HomeWork009/_token.txt', 'r', encoding='utf-8') as file:
     token = file.readline()
 
 bot = Bot(token)

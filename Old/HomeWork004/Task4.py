@@ -21,7 +21,7 @@ task_str = ''.join(get_polylist(k))
 
 print(task_str) # проверка в консоли
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork004\Task4(1).txt', 'w') as data:
+with open('/Old/HomeWork004/Task4(1).txt', 'w') as data:
     data.write(task_str)
 
 # для 5ой задачи
@@ -30,5 +30,5 @@ task_str = ''.join(get_polylist(k))
 
 print(task_str) # проверка в консоли
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork004\Task4(2).txt', 'w') as data:
+with open('/Old/HomeWork004/Task4(2).txt', 'w') as data:
     data.write(task_str)

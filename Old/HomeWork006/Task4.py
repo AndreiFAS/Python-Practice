@@ -41,12 +41,12 @@ def RLErecover(text):
 txt = 'acabbbbeeeee'
 
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork006\TextC.txt', 'w+', encoding='utf-8') as data:
+with open('/Old/HomeWork006/TextC.txt', 'w+', encoding='utf-8') as data:
     data.write(RLEcompres(txt))
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork006\TextC.txt', 'r', encoding='utf-8') as data:
+with open('/Old/HomeWork006/TextC.txt', 'r', encoding='utf-8') as data:
     comp_txt = data.read()
 
-with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork006\TextR.txt', 'w+', encoding='utf-8') as data:
+with open('/Old/HomeWork006/TextR.txt', 'w+', encoding='utf-8') as data:
     data.write(RLErecover(comp_txt))
 

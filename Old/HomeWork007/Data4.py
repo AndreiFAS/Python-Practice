@@ -17,5 +17,5 @@ def start():
         .format(style, decription)
     html += '  </body>\n</html>'
     
-    with open('D:\GB\Знакомство с языком Python\Python-Practice\HomeWork007\BD.html', 'a+') as page:
+    with open('/Old/HomeWork007/BD.html', 'a+') as page:
         page.write(html)
