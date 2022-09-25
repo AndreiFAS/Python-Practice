@@ -257,8 +257,6 @@ ServiceFabricBackup/
 *.rptproj.rsuser
 *- Backup*.rdl
 
-# Microsoft Fakes
-FakesAssemblies/
 
 # GhostDoc plugin setting file
 *.GhostDoc.xml
